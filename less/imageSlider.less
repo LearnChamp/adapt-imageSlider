@@ -1,0 +1,97 @@
+.image-slider-inner {
+
+    .image-slider-widget {
+
+        overflow: hidden;
+
+        .title-frame,
+        .image-frame {
+
+            .title-slider,
+            .image-slider {
+                transition: transform 400ms ease-in-out;
+            }
+
+            position: relative;
+
+            .title-item,
+            .image-item {
+
+                float: left;
+
+                .title-item-inner {
+                    .item-title;
+                }
+            }
+
+            .image-item {
+                img {
+                    display: block;
+                    width: 100%;
+                }
+            }
+
+            .title-item-inner {
+                padding-left: 1px;
+            }
+        }
+
+        .slider-button {
+            position: absolute;
+            display: none;
+
+            background-color: @item-color;
+            padding: @item-padding;
+            top: 50%;
+            margin-top: (@item-padding * 2 + @icon-size) * -0.5;
+
+            .icon {
+                color: @item-text-color;
+            }
+
+            &:hover {
+                .no-touch & {
+                    background-color: @item-color-hover;
+                    .icon {
+                        color: @item-text-color-hover;
+                    }
+                }
+            }
+
+            &.next {
+                .show-next & {
+                    display: inline-block;
+                    right: 0%;
+                }
+            }
+            
+            &.previous {
+                .show-prev & {
+                    display: inline-block;
+                    left: 0%;
+                }
+            }
+        }
+
+        .indicator {
+
+            text-align: center;
+            margin-top: (@icon-size/4);
+            
+            .progress {
+                width: (@icon-size/2);
+                height: (@icon-size/2);
+                display: inline-block;
+                margin: 1px;
+                border: inherit;
+                border-radius: 50%;
+                background-color: @item-color;
+                cursor: pointer;
+                
+                &.selected {
+                    background-color: @foreground-color;
+                }
+            }
+        }
+    }
+}

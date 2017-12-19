@@ -1,0 +1,36 @@
+<div class="image-slider-inner component-inner">
+    {{> component this}}
+    <div class="image-slider-widget component-widget">
+      <div class="title-frame clearfix">
+        <div class="title-slider" style="width:{{_totalWidth}}%">
+          {{#each _items }}
+            <div class="title-item" style="width:{{../_itemWidth}}%" data-slideindex="{{@index}}">
+              <div class="title-item-inner">
+                {{{title}}}
+              </div>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+      <div class="image-frame clearfix">
+        <div class="image-slider" style="width:{{_totalWidth}}%">
+          {{#each _items}}
+          <div class="image-item" style="width:{{../_itemWidth}}%" data-slideindex="{{@index}}">
+            <img src="{{src}}" alt="{{src}}">
+          </div>
+          {{/each}}
+        </div>
+        <button class="slider-button previous base">
+          <div class="icon icon-controls-left"></div>
+        </button>
+        <button class="slider-button next base">
+          <div class="icon icon-controls-right"></div>
+        </button>
+      </div>
+      <div class="indicator">
+        {{#each _items }}
+          <span class="progress" data-index="{{@index}}"></span>
+        {{/each}}
+      </div>
+    </div>
+</div>
