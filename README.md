@@ -1,6 +1,8 @@
 # adapt-imageSlider  
 This component is a lightweight alternative for [adapt-contribNarrative](https://github.com/adaptlearning/adapt-contrib-narrative). However, this component displays only a title and an associated image.
 
+![imageSlider](https://raw.githubusercontent.com/LearnChamp/sharedAssets/master/assets/adapt-imageSlider.gif)   
+
 ## Installation
 To install the component with the [Adapt CLI](https://github.com/adaptlearning/adapt-cli), run the following from the command line:  
 `adapt install adapt-imageSlider`
