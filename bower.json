@@ -10,7 +10,7 @@
     "assetFields": [
         "_items.src"
     ],
-    "description": "Sime image slider component",
+    "description": "Simple image slider component",
     "main": "/js/adapt-image-slider.js",
     "keywords": [
         "adapt-plugin",
